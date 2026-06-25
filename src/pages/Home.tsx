@@ -86,10 +86,10 @@ function VisualPanel({
         aria-hidden
       />
       <img
-        src="./radicon.png"
+        src="./rad.jpg"
         alt=""
         aria-hidden
-        className="absolute bottom-4 right-4 h-8 w-8 opacity-70"
+        className="absolute mix-blend-multiply bottom-4 right-4 h-8 opacity-70"
       />
       <span className="absolute left-4 top-3 font-serif text-xs italic text-foreground/40">
         fig. {index + 1}
@@ -137,9 +137,9 @@ export function Home() {
       <section className="border-b border-border bg-gradient-to-b from-muted/40 to-background">
         <div className="mx-auto flex max-w-6xl flex-col items-center px-4 py-24 text-center sm:px-6 sm:py-32 lg:px-8">
           <img
-            src="./radicon.png"
+            src="./rad.jpg"
             alt="RAD Research Group logo"
-            className="mb-8 h-20 w-20 rounded-lg shadow-sm"
+            className="mb-8 h-20 mix-blend-multiply"
           />
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
             Risk and Aging Dynamics Research Group

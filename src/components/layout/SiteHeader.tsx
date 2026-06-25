@@ -11,16 +11,16 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 ml-50 mr-20 items-center gap-8 px-4 sm:px-6 lg:px-8">
         <Link
           to="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-1"
           onClick={() => setOpen(false)}
         >
           <img
-            src="./radicon.png"
+            src="./rad.jpg"
             alt="RAD Research Group logo"
-            className="h-9 w-9 rounded"
+            className="h-9 mix-blend-multiply rounded"
           />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-base font-semibold text-foreground">
@@ -32,7 +32,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 md:ml-auto md:flex">
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.to}
