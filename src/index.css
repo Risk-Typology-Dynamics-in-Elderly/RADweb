@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.992 0.004 90);
+  --foreground: oklch(0.21 0.02 264);
+  --muted: oklch(0.967 0.006 90);
+  --muted-foreground: oklch(0.46 0.02 264);
+  --border: oklch(0.9 0.008 264);
+  --input: oklch(0.9 0.008 264);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.02 264);
+  --primary: oklch(0.28 0.04 264);
+  --primary-foreground: oklch(0.98 0.004 90);
+  --accent: oklch(0.42 0.08 264);
+  --accent-foreground: oklch(0.98 0.004 90);
+  --ring: oklch(0.42 0.08 264);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: oklch(0.18 0.015 264);
+  --foreground: oklch(0.95 0.005 90);
+  --muted: oklch(0.24 0.02 264);
+  --muted-foreground: oklch(0.68 0.02 264);
+  --border: oklch(0.28 0.02 264);
+  --input: oklch(0.28 0.02 264);
+  --card: oklch(0.22 0.015 264);
+  --card-foreground: oklch(0.95 0.005 90);
+  --primary: oklch(0.92 0.005 90);
+  --primary-foreground: oklch(0.21 0.02 264);
+  --accent: oklch(0.62 0.1 264);
+  --accent-foreground: oklch(0.98 0.004 90);
+  --ring: oklch(0.62 0.1 264);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
