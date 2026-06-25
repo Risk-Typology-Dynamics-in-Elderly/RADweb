@@ -1,9 +1,27 @@
+import { Mail, MapPin, Globe } from "lucide-react"
+
 import { PageHeader } from "@/components/layout/PageHeader"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+
+const channels = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "contact@[placeholder]",
+    href: "mailto:contact@[placeholder]",
+  },
+  {
+    icon: MapPin,
+    label: "Address",
+    value:
+      "[Placeholder]\nRisk and Aging Dynamics Research Group",
+  },
+  {
+    icon: Globe,
+    label: "Online",
+    value: "[Placeholder]",
+  },
+]
 
 export function Contact() {
   return (
@@ -14,53 +32,37 @@ export function Contact() {
         description="Reach out to the RAD Research Group with questions, ideas, or collaboration inquiries."
       />
 
-      <div className="mx-auto mt-14 grid max-w-4xl gap-10 md:grid-cols-2">
-        <div className="space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
-          <p>
-            [Placeholder]
-          </p>
-          <div className="space-y-1">
-            <p className="text-sm font-medium text-foreground">Email</p>
-            <p className="text-sm">contact@[placeholder]</p>
-          </div>
-          <div className="space-y-1">
-            <p className="text-sm font-medium text-foreground">Address</p>
-            <p className="text-sm">
-              [Placeholder]
-              <br />
-              Risk and Aging Dynamics Research Group
-            </p>
-          </div>
-        </div>
+      <div className="mx-auto mt-14 max-w-3xl space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
+        <p>
+          [Placeholder]
+        </p>
+      </div>
 
-        <Card>
-          <CardContent>
-            <form
-              className="space-y-4"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Your name" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="you@example.com" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  placeholder="How can we help?"
-                  className="min-h-[120px]"
-                />
-              </div>
-              <Button type="submit" className="w-full">
-                Send message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
+      <Separator className="mx-auto mt-10 max-w-3xl" />
+
+      <div className="mx-auto mt-10 max-w-3xl space-y-8">
+        {channels.map(({ icon: Icon, label, value, href }) => (
+          <div key={label} className="flex items-start gap-4">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-muted text-primary">
+              <Icon className="h-5 w-5" />
+            </span>
+            <div className="space-y-1">
+              <p className="text-sm font-medium text-foreground">{label}</p>
+              {href ? (
+                <a
+                  href={href}
+                  className="block whitespace-pre-line text-[1.05rem] text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {value}
+                </a>
+              ) : (
+                <p className="whitespace-pre-line text-[1.05rem] text-muted-foreground">
+                  {value}
+                </p>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
