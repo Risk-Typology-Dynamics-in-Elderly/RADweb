@@ -37,43 +37,32 @@ export function Framework() {
 
         <div className="space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
-            [Placeholder] Aging is not merely the passage of time. It is a
-            dynamic process in which biological, cognitive, and social
-            trajectories unfold together — and in which risk is ever-present.
+            [Placeholder]
           </p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            1. Risk as a trajectory
+            1.
           </h2>
           <p>
-            [Placeholder] We begin from the premise that risk is not a static
-            attribute but a trajectory. A person's exposure to, perception of,
-            and resilience against risk all evolve across the life course.
+            [Placeholder]
           </p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            2. Dynamics and feedback
+            2.
           </h2>
           <p>
-            [Placeholder] Risk and aging are coupled through feedback. Changes
-            in health alter risk exposure; shifts in risk, in turn, shape
-            downstream aging outcomes. Mapping these loops is central to our
-            framework.
+            [Placeholder]
           </p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            3. From framework to measurement
+            3.
           </h2>
           <p>
-            [Placeholder] The framework is not an end in itself. Its purpose is
-            to guide what we measure and how — producing reproducible,
-            interpretable indicators of risk dynamics in aging populations.
+            [Placeholder]
           </p>
 
           <p className="pt-4 italic">
-            This introduction outlines the conceptual scaffolding of our work.
-            Detailed methods and findings will be added as the project
-            progresses.
+            [Placeholder]
           </p>
         </div>
       </article>

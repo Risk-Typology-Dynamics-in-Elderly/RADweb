@@ -15,31 +15,20 @@ export function Project() {
           Background
         </h2>
         <p>
-          Risk is a defining feature of human experience, and its character
-          shifts across the life course. As populations age globally,
-          understanding how risk is perceived, distributed, and managed in
-          later life becomes increasingly urgent.
+          [Placeholder]
         </p>
         <p>
-          [Placeholder] The Risk and Aging Dynamics Research Group was
-          established to address this challenge. We bring together
-          perspectives from cognitive science, public health, and data
-          analytics to examine how aging shapes — and is shaped by — risk.
+          [Placeholder]
         </p>
 
         <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
           Aim
         </h2>
         <p>
-          [Placeholder] Our aim is to develop a rigorous, evidence-based
-          account of risk in aging populations, and to translate that
-          understanding into tools and insights that support decision-making
-          for individuals, clinicians, and policymakers.
+          [Placeholder]
         </p>
         <p>
-          Specifically, the project seeks to characterize the trajectories of
-          risk across adulthood, identify the factors that alter these
-          trajectories, and build reproducible methods for measuring them.
+          [Placeholder]
         </p>
       </Prose>
     </div>
