@@ -75,3 +75,11 @@
     letter-spacing: -0.01em;
   }
 }
+
+.hide-native-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-native-scrollbar::-webkit-scrollbar {
+  display: none;
+}
