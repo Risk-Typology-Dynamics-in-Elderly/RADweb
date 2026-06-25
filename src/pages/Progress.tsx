@@ -8,35 +8,35 @@ const milestones = [
     status: "Completed",
     title: "Project kickoff",
     description:
-      "[Placeholder] The RAD Research Group was established and the project scope defined.",
+      "[Placeholder]",
   },
   {
     date: "2026-03",
     status: "Completed",
     title: "Literature review",
     description:
-      "[Placeholder] Completed a systematic review of risk and aging research.",
+      "[Placeholder]",
   },
   {
     date: "2026-06",
     status: "In progress",
     title: "Framework formulation",
     description:
-      "[Placeholder] Developing the conceptual framework that guides our empirical work.",
+      "[Placeholder]",
   },
   {
     date: "2026-09",
     status: "Planned",
     title: "Data collection",
     description:
-      "[Placeholder] Begin collecting data for the first analysis wave.",
+      "[Placeholder]",
   },
   {
     date: "2026-12",
     status: "Planned",
     title: "Dashboard release",
     description:
-      "[Placeholder] Release the first public version of the analysis dashboard.",
+      "[Placeholder]",
   },
 ]
 

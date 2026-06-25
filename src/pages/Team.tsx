@@ -10,24 +10,29 @@ import {
 
 const members = [
   {
-    name: "Member One",
-    role: "Principal Investigator",
-    bio: "[Placeholder] Leads the RAD Research Group's direction and research agenda.",
+    name: "EM",
+    role: "[Placeholder]",
+    bio: "[Placeholder]",
   },
   {
-    name: "Member Two",
-    role: "Co-Investigator",
-    bio: "[Placeholder] Co-leads methodology and data analysis for the project.",
+    name: "EM",
+    role: "[Placeholder]",
+    bio: "[Placeholder]",
   },
   {
-    name: "Member Three",
-    role: "Postdoctoral Researcher",
-    bio: "[Placeholder] Works on modeling risk trajectories across the life course.",
+    name: "EM",
+    role: "[Placeholder]",
+    bio: "[Placeholder]",
   },
   {
-    name: "Member Four",
-    role: "Doctoral Student",
-    bio: "[Placeholder] Contributes to data collection and dashboard development.",
+    name: "EM",
+    role: "[Placeholder]",
+    bio: "[Placeholder]",
+  },
+  {
+    name: "EM",
+    role: "[Placeholder]",
+    bio: "[Placeholder]",
   },
 ]
 

@@ -25,8 +25,8 @@ type Feature = {
 const features: Feature[] = [
   {
     eyebrow: "The Project",
-    title: "Understanding risk across the life course.",
-    body: "Risk is not static — it evolves as we age. The RAD Research Group studies how exposure to, perception of, and resilience against risk shift across adulthood, bridging cognitive science, public health, and data analysis.",
+    title: "[placeholder]",
+    body: "[placeholder]",
     to: "/project",
     linkLabel: "Read about the project",
     icon: Activity,
@@ -34,8 +34,8 @@ const features: Feature[] = [
   },
   {
     eyebrow: "The Framework",
-    title: "A framework for dynamics and feedback.",
-    body: "Risk and aging are coupled through feedback loops. Our conceptual framework maps how changes in health alter risk exposure — and how those shifts, in turn, shape downstream aging outcomes.",
+    title: "[placeholder]",
+    body: "[placeholder]",
     to: "/framework",
     linkLabel: "Explore the framework",
     icon: Network,
@@ -43,8 +43,8 @@ const features: Feature[] = [
   },
   {
     eyebrow: "The Dashboard",
-    title: "Data-driven insights, in progress.",
-    body: "We are building reproducible methods for measuring risk trajectories in aging populations. An interactive dashboard will make these indicators accessible to researchers, clinicians, and policymakers.",
+    title: "[placeholder]",
+    body: "[placeholder]",
     to: "/dashboard",
     linkLabel: "View the dashboard demo",
     icon: BarChart3,
@@ -53,7 +53,7 @@ const features: Feature[] = [
 ]
 
 const stats = [
-  { value: "4+", label: "Researchers" },
+  { value: "7", label: "Researchers" },
   { value: "1", label: "Ongoing project" },
   { value: "2026", label: "Established" },
 ]

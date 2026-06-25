@@ -17,12 +17,11 @@ export function Contact() {
       <div className="mx-auto mt-14 grid max-w-4xl gap-10 md:grid-cols-2">
         <div className="space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
           <p>
-            [Placeholder] We welcome inquiries from researchers, students, and
-            organizations interested in risk and aging dynamics.
+            [Placeholder]
           </p>
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Email</p>
-            <p className="text-sm">contact@rad-research.example</p>
+            <p className="text-sm">contact@[placeholder]</p>
           </div>
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Address</p>
