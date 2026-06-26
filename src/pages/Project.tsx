@@ -1,35 +1,31 @@
+import { useTranslation } from "react-i18next"
+
 import { PageHeader } from "@/components/layout/PageHeader"
 import { Prose } from "@/components/layout/Prose"
 
 export function Project() {
+  const { t } = useTranslation()
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <PageHeader
-        eyebrow="The Project"
-        title="Research Background & Aim"
-        description="The motivation, scope, and objective behind the RAD Research Group's work."
+        eyebrow={t("project.eyebrow")}
+        title={t("project.title")}
+        description={t("project.description")}
       />
 
       <Prose className="mt-14">
         <h2 className="font-serif text-2xl font-medium text-foreground">
-          Background
+          {t("project.background")}
         </h2>
-        <p>
-          [Placeholder]
-        </p>
-        <p>
-          [Placeholder]
-        </p>
+        <p>{t("common.placeholder")}</p>
+        <p>{t("common.placeholder")}</p>
 
         <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-          Aim
+          {t("project.aim")}
         </h2>
-        <p>
-          [Placeholder]
-        </p>
-        <p>
-          [Placeholder]
-        </p>
+        <p>{t("common.placeholder")}</p>
+        <p>{t("common.placeholder")}</p>
       </Prose>
     </div>
   )

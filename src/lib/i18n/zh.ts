@@ -1,0 +1,139 @@
+import type { Translation } from "./en"
+
+const zh: Translation = {
+  common: {
+    placeholder: "[Placeholder]",
+  },
+  nav: {
+    home: "首页",
+    project: "项目",
+    framework: "研究框架",
+    dashboard: "仪表盘演示",
+    team: "团队",
+    progress: "进展",
+    contact: "联系",
+  },
+  brand: {
+    name: "RAD Research Group",
+    tagline: "Risk and Aging Dynamics",
+    footerName: "Risk and Aging Dynamics Research Group",
+    footerTagline: "RAD — Risk and Aging Dynamics",
+  },
+  header: {
+    toggleMenu: "切换菜单",
+    languageLabel: "语言",
+    switchTo: "切换到中文",
+  },
+  home: {
+    hero: {
+      eyebrow: "Risk and Aging Dynamics Research Group",
+      title: "Understanding risk through the lens of aging.",
+      body: "The RAD Research Group investigates the dynamics of risk as they unfold across the aging process — bridging theory, data, and applied analysis.",
+      ctaPrimary: "Explore the project",
+      ctaSecondary: "Get in touch",
+    },
+    feature: {
+      project: {
+        eyebrow: "The Project",
+        title: "[placeholder]",
+        body: "[placeholder]",
+        link: "Read about the project",
+      },
+      framework: {
+        eyebrow: "The Framework",
+        title: "[placeholder]",
+        body: "[placeholder]",
+        link: "Explore the framework",
+      },
+      dashboard: {
+        eyebrow: "The Dashboard",
+        title: "[placeholder]",
+        body: "[placeholder]",
+        link: "View the dashboard demo",
+      },
+    },
+    stats: {
+      researchers: "研究人员",
+      ongoingProject: "进行中的项目",
+      established: "成立年份",
+    },
+    explore: {
+      title: "探索研究组",
+      team: "认识成员",
+      progress: "查看里程碑",
+      contact: "与我们联系",
+    },
+    figure: "图 {{n}}",
+  },
+  project: {
+    eyebrow: "The Project",
+    title: "Research Background & Aim",
+    description:
+      "The motivation, scope, and objective behind the RAD Research Group's work.",
+    background: "Background",
+    aim: "Aim",
+  },
+  framework: {
+    eyebrow: "Research Framework",
+    title: "A Framework for Risk and Aging Dynamics",
+    description:
+      "An introductory, essay-style account of the conceptual framework guiding our research.",
+    posted: "Posted",
+    author: "Author",
+    readTime: "Read time",
+    postedValue: "June 2026",
+    authorValue: "RAD Research Group",
+    readTimeValue: "5 min",
+  },
+  dashboard: {
+    eyebrow: "Dashboard Demo",
+    title: "Coming soon",
+    description:
+      "Our interactive dashboard is currently in preparation. Please check back later.",
+    blankTitle: "Dashboard content will appear here.",
+    blankBody: "Intentionally left blank for now.",
+  },
+  team: {
+    eyebrow: "The Team",
+    title: "People behind the RAD Research Group",
+    description:
+      "Researchers and students working on risk and aging dynamics.",
+  },
+  progress: {
+    eyebrow: "Progress",
+    title: "What the team has done",
+    description:
+      "A timeline of milestones and activities accomplished by the RAD Research Group.",
+    status: {
+      completed: "Completed",
+      inProgress: "In progress",
+      planned: "Planned",
+    },
+    milestones: {
+      kickoff: { title: "Project kickoff" },
+      literature: { title: "Literature review" },
+      formulation: { title: "Framework formulation" },
+      collection: { title: "Data collection" },
+      release: { title: "Dashboard release" },
+    },
+  },
+  contact: {
+    eyebrow: "Contact",
+    title: "Get in touch",
+    description:
+      "Reach out to the RAD Research Group with questions, ideas, or collaboration inquiries.",
+    channels: {
+      email: "Email",
+      address: "Address",
+      online: "Online",
+    },
+    addressValue:
+      "[Placeholder]\nRisk and Aging Dynamics Research Group",
+  },
+  footer: {
+    contact: "Contact",
+    copyright: "© {{year}} RAD Research Group. All rights reserved.",
+  },
+}
+
+export default zh

@@ -1,12 +1,15 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { Menu, X } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 import { cn } from "@/lib/utils"
 import { NAV_ITEMS } from "@/lib/nav"
 import { Button } from "@/components/ui/button"
+import { LanguageToggle } from "@/components/LanguageToggle"
 
 export function SiteHeader() {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
 
   return (
@@ -24,10 +27,10 @@ export function SiteHeader() {
           />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-base font-semibold text-foreground">
-              RAD Research Group
+              {t("brand.name")}
             </span>
             <span className="text-[11px] text-muted-foreground">
-              Risk and Aging Dynamics
+              {t("brand.tagline")}
             </span>
           </span>
         </Link>
@@ -47,9 +50,10 @@ export function SiteHeader() {
                 )
               }
             >
-              {item.label}
+              {t(item.labelKey)}
             </NavLink>
           ))}
+          <LanguageToggle className="ml-2" />
         </nav>
 
         <Button
@@ -57,7 +61,7 @@ export function SiteHeader() {
           size="icon"
           className="md:hidden"
           onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
+          aria-label={t("header.toggleMenu")}
         >
           {open ? <X /> : <Menu />}
         </Button>
@@ -81,9 +85,12 @@ export function SiteHeader() {
                   )
                 }
               >
-                {item.label}
+                {t(item.labelKey)}
               </NavLink>
             ))}
+            <div className="px-3 py-2">
+              <LanguageToggle />
+            </div>
           </div>
         </nav>
       )}
