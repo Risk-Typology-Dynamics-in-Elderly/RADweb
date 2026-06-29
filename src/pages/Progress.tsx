@@ -11,15 +11,16 @@ type BadgeVariant = "default" | "secondary" | "outline"
 type Milestone = {
   date: string
   statusId: StatusId
-  titleKey: string
+  titleKey: string,
+  descKey: string
 }
 
 const milestones: Milestone[] = [
-  { date: "2026-01", statusId: "completed", titleKey: "progress.milestones.kickoff.title" },
-  { date: "2026-03", statusId: "completed", titleKey: "progress.milestones.literature.title" },
-  { date: "2026-06", statusId: "inProgress", titleKey: "progress.milestones.formulation.title" },
-  { date: "2026-09", statusId: "planned", titleKey: "progress.milestones.collection.title" },
-  { date: "2026-12", statusId: "planned", titleKey: "progress.milestones.release.title" },
+  { date: "2026-01", statusId: "completed", titleKey: "progress.milestones.kickoff.title", descKey: "common.placeholder" },
+  { date: "2026-03", statusId: "completed", titleKey: "progress.milestones.literature.title", descKey: "common.placeholder" },
+  { date: "2026-06", statusId: "inProgress", titleKey: "progress.milestones.formulation.title", descKey: "common.placeholder" },
+  { date: "2026-09", statusId: "planned", titleKey: "progress.milestones.collection.title", descKey: "common.placeholder" },
+  { date: "2026-12", statusId: "planned", titleKey: "progress.milestones.release.title", descKey: "common.placeholder" },
 ]
 
 const statusVariant: Record<StatusId, BadgeVariant> = {
@@ -58,7 +59,7 @@ export function Progress() {
                     {t(m.titleKey)}
                   </h3>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {t("common.placeholder")}
+                    {t(m.descKey)}
                   </p>
                 </CardContent>
               </Card>
