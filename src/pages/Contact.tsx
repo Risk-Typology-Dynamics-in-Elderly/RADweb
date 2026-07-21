@@ -46,8 +46,7 @@ export function Contact() {
       <div className="mx-auto mt-10 max-w-3xl space-y-8">
         {channelConfig.map(({ key, icon: Icon, href }) => {
           const label = t(`contact.channels.${key}`)
-          const value =
-            key === "address" ? t("contact.addressValue") : t("common.placeholder")
+          const value = t(`contact.${key}Value`)
           return (
             <div key={key} className="flex items-start gap-4">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-muted text-primary">
