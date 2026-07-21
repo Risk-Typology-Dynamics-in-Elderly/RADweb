@@ -42,24 +42,27 @@ export function Framework() {
         <Separator className="my-8" />
 
         <div className="space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
-          <p>{t("common.placeholder")}</p>
+          <p className="pt-4 italic">{t("framework.conclusion")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
             1.
           </h2>
-          <p>{t("common.placeholder")}</p>
+          <p>{t("framework.title1")}</p>
+          <p>{t("framework.desc1")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
             2.
           </h2>
-          <p>{t("common.placeholder")}</p>
+          <p>{t("framework.title2")}</p>
+          <p>{t("framework.desc2")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
             3.
           </h2>
-          <p>{t("common.placeholder")}</p>
+          <p>{t("framework.title3")}</p>
+          <p>{t("framework.desc3")}</p>
 
-          <p className="pt-4 italic">{t("common.placeholder")}</p>
+
         </div>
       </article>
     </div>

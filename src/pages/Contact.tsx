@@ -14,7 +14,7 @@ const channelConfig: {
   {
     key: "email",
     icon: Mail,
-    href: "mailto:contact@[placeholder]",
+    href: "mailto:ianyiwen.zhu@mail.utoronto.ca",
   },
   {
     key: "address",

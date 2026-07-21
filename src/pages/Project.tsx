@@ -18,14 +18,14 @@ export function Project() {
         <h2 className="font-serif text-2xl font-medium text-foreground">
           {t("project.background")}
         </h2>
-        <p>{t("common.placeholder")}</p>
-        <p>{t("common.placeholder")}</p>
+        <p>{t("project.backgroundDesc")}</p>
+        <p>{t("project.backgroundDesc")}</p>
 
         <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
           {t("project.aim")}
         </h2>
-        <p>{t("common.placeholder")}</p>
-        <p>{t("common.placeholder")}</p>
+        <p>{t("project.aimDesc")}</p>
+        <p>{t("project.aimDesc")}</p>
       </Prose>
     </div>
   )
