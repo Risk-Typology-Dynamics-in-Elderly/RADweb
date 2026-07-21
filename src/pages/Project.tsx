@@ -19,13 +19,13 @@ export function Project() {
           {t("project.background")}
         </h2>
         <p>{t("project.backgroundDesc")}</p>
-        <p>{t("project.backgroundDesc")}</p>
+
 
         <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
           {t("project.aim")}
         </h2>
         <p>{t("project.aimDesc")}</p>
-        <p>{t("project.aimDesc")}</p>
+
       </Prose>
     </div>
   )
