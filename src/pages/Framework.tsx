@@ -45,21 +45,18 @@ export function Framework() {
           <p className="pt-4 italic">{t("framework.conclusion")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            1.
+            1. {t("framework.title1")}
           </h2>
-          <p>{t("framework.title1")}</p>
           <p>{t("framework.desc1")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            2.
+            2. {t("framework.title2")}
           </h2>
-          <p>{t("framework.title2")}</p>
           <p>{t("framework.desc2")}</p>
 
           <h2 className="pt-4 font-serif text-2xl font-medium text-foreground">
-            3.
+            3. {t("framework.title3")}
           </h2>
-          <p>{t("framework.title3")}</p>
           <p>{t("framework.desc3")}</p>
 
 
