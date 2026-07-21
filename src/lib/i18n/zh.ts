@@ -88,17 +88,17 @@ const zh: Translation = {
   "助力实现更加主动、精准、高效的健康管理与照护服务。",
   },
   framework: {
-    eyebrow: "Research Framework",
-    title: "A Framework for Risk and Aging Dynamics",
+    eyebrow: "研究框架",
+    title: "风险与老龄化动态研究框架",
     description:
-      "An introductory, essay-style account of the conceptual framework guiding our research.",
-    posted: "Posted",
-    author: "Author",
-    readTime: "Read time",
-    postedValue: "June 2026",
-    authorValue: "RAD Research Group",
-    readTimeValue: "5 min",
-    conclusion: "Our research follows a three-stage framework, progressing from multidimensional assessment to dynamic prediction and real-world deployment.",
+      "此导论以叙述性体例，系统阐述了我们研究的概念基础与理论架构，旨在为读者提供清晰而深入的框架导览。",
+    posted: "发布时间",
+    author: "作者",
+    readTime: "阅读时长",
+    postedValue: "2026年6月",
+    authorValue: "RAD 研究团队",
+    readTimeValue: "5 分钟",
+    conclusion: "我们的研究遵循三阶段框架，从多维评估出发，逐步推进至动态预测，最终实现实际场景部署。",
     title1: "第一阶段：多维评估体系构建",
     desc1: "我们的研究首先构建一套面向老年人的标准化多维评估体系。 " +
   "在整合现有临床评估工具和功能评估量表的基础上， " +
@@ -134,14 +134,14 @@ const zh: Translation = {
       "Researchers and students working on risk and aging dynamics.",
   },
   progress: {
-    eyebrow: "Progress",
-    title: "What the team has done",
+    eyebrow: "项目进展",
+    title: "团队完成的工作",
     description:
-      "A timeline of milestones and activities accomplished by the RAD Research Group.",
+      "RAD 研究团队在项目推进过程中所完成的阶段性工作概览。",
     status: {
-      completed: "Completed",
-      inProgress: "In progress",
-      planned: "Planned",
+      completed: "已完成",
+      inProgress: "进行中",
+      planned: "计划中",
     },
     milestones: {
       kickoff: {
@@ -206,6 +206,7 @@ const zh: Translation = {
     title: "取得联系",
     description: "我们欢迎研究合作、社区伙伴关系以及学术咨询。 " +
     "欢迎联系风险与老龄化动态（RAD）研究团队。",
+    note: "由于团队成员分布于全球多个时区，邮件及留言通常将在 24 小时内回复。感谢您的耐心等待",
     channels: {
       email: "邮箱",
       address: "地址",

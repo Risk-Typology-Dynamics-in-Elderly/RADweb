@@ -211,6 +211,7 @@
     description:
     "We welcome research collaborations, community partnerships, and academic inquiries. " +
     "Feel free to contact the Risk and Aging Dynamics (RAD) Research Group.",
+    note:"Due to our team being distributed across multiple time zones, responses may not be immediate. We aim to reply to all inquiries within 24 hours. Thank you for your understanding.",
     channels: {
       email: "Email",
       address: "Address",

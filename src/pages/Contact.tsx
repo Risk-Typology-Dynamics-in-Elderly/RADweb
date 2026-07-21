@@ -38,7 +38,7 @@ export function Contact() {
       />
 
       <div className="mx-auto mt-14 max-w-3xl space-y-6 text-[1.05rem] leading-relaxed text-muted-foreground">
-        <p>{t("common.placeholder")}</p>
+        <p className="italic text-sm text-muted-foreground">{t("contact.note")}</p>
       </div>
 
       <Separator className="mx-auto mt-10 max-w-3xl" />
