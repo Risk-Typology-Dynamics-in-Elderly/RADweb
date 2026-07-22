@@ -16,15 +16,15 @@ type Milestone = {
 }
 
 const milestones: Milestone[] = [
-  { date: "2026-01", statusId: "completed", titleKey: "progress.milestones.kickoff.title", descKey: "progress.milestones.kickoff.desc" },
-  { date: "2026-03", statusId: "completed", titleKey: "progress.milestones.literature.title", descKey: "progress.milestones.literature.desc" },
-  { date: "2026-06", statusId: "inProgress", titleKey: "progress.milestones.formulation.title", descKey: "progress.milestones.formulation.desc" },
-  { date: "2026-09", statusId: "inProgress", titleKey: "progress.milestones.collection.title", descKey: "progress.milestones.collection.desc" },
-  { date: "2026-01", statusId: "planned", titleKey: "progress.milestones.pilot.title", descKey: "progress.milestones.pilot.desc" },
-  { date: "2026-03", statusId: "planned", titleKey: "progress.milestones.validation.title", descKey: "progress.milestones.validation.desc" },
-  { date: "2026-06", statusId: "planned", titleKey: "progress.milestones.modeling.title", descKey: "progress.milestones.modeling.desc" },
-  { date: "2026-09", statusId: "planned", titleKey: "progress.milestones.release.title", descKey: "progress.milestones.release.desc" },
-  { date: "2026-12", statusId: "planned", titleKey: "progress.milestones.deployment.title", descKey: "progress.milestones.deployment.desc" },
+  { date: "", statusId: "completed", titleKey: "progress.milestones.kickoff.title", descKey: "progress.milestones.kickoff.desc" },
+  { date: "", statusId: "completed", titleKey: "progress.milestones.literature.title", descKey: "progress.milestones.literature.desc" },
+  { date: "", statusId: "inProgress", titleKey: "progress.milestones.formulation.title", descKey: "progress.milestones.formulation.desc" },
+  { date: "", statusId: "inProgress", titleKey: "progress.milestones.collection.title", descKey: "progress.milestones.collection.desc" },
+  { date: "", statusId: "planned", titleKey: "progress.milestones.pilot.title", descKey: "progress.milestones.pilot.desc" },
+  { date: "", statusId: "planned", titleKey: "progress.milestones.validation.title", descKey: "progress.milestones.validation.desc" },
+  { date: "", statusId: "planned", titleKey: "progress.milestones.modeling.title", descKey: "progress.milestones.modeling.desc" },
+  { date: "", statusId: "planned", titleKey: "progress.milestones.release.title", descKey: "progress.milestones.release.desc" },
+  { date: "", statusId: "planned", titleKey: "progress.milestones.deployment.title", descKey: "progress.milestones.deployment.desc" },
 ]
 
 const statusVariant: Record<StatusId, BadgeVariant> = {
