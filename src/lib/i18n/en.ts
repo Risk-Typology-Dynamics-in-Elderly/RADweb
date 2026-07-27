@@ -227,7 +227,7 @@
         "and collection of health service-related information, " +
         "providing support for project research implementation and daily operations.",
         email: "luz071275@gmail.com",
-        phone: "",
+        phone: "+86 19923293839",
         timezone: "9:00 AM - 3:00 PM (UTC+8) Hong Kong Standard Time",
       },
 
