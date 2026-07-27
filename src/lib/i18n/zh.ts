@@ -128,10 +128,99 @@ const zh: Translation = {
     blankBody: "Intentionally left blank for now.",
   },
   team: {
-    eyebrow: "The Team",
-    title: "People behind the RAD Research Group",
+    eyebrow: "团队简介",
+    title: "RAD研究团队中的成员",
     description:
-      "Researchers and students working on risk and aging dynamics.",
+      "致力于风险与老龄化动态研究的研究人员与学生",
+    members: {
+  Gloria: {
+    name: "张诗淇",
+    role: "项目总负责人 | 自理能力板块负责人",
+    background: "多伦多大学荣誉理学学士（Mathematical & Physics），" +
+                "专注于人工智能、机器学习与数据科学研究。",
+    responsibility: "在RAD项目组中负责项目整体研究规划与学术管理， " +
+                    "主导多维评估框架设计、量表体系开发、AI风险分型模型构建、 " +
+                    "数据分析及可视化平台设计， " +
+                    "并负责自理能力板块的研究与开发。",
+    email: "zhangshiqi315@gmail.com",
+    phone: "+86 130 3635 0422",
+    timezone: "回复时间: 9:00 AM - 5:00 PM (UTC-4) 北美东部时间 - 多伦多",
+  },
+  Ian: {
+    name: "朱义文",
+    role: "全球合作与项目管理总负责人 | 跨板块研究设计与环境板块负责人",
+    background: "多伦多大学荣誉理学学士（Honours Bachelor of Science）。",
+    responsibility: "在RAD项目组中负责项目整体运营管理、全球合作及科研组织工作， " +
+                    "主导跨板块研究设计与多模块评估框架整合， " +
+                    "统筹各板块变量体系、研究流程及模块协同， " +
+                    "推进整体研究架构的建立与优化。 " +
+                    "同时负责环境板块量表设计与开发、环境相关变量文献综述、 " +
+                    "指标体系构建、问卷优化及信效度检验。",
+    email: "ianyiwen.zhu@mail.utoronto.ca",
+    phone: "+1 (437) 350-9091",
+    timezone: "回复时间: 9:00 AM - 4:00 PM (UTC-4) 北美东部时间 - 多伦多",
+  },
+  Lucy: {
+    name: "陈璐逸",
+    role: "生理板块负责人 | 数据科学分析",
+    background: "加州大学圣芭芭拉分校统计与数据科学理学学士、经济学文学学士。 " +
+                "专注于经济统计、应用数据科学与机器学习。",
+    responsibility: "在RAD研究组中负责生理板块的研究设计与量表开发， " +
+                    "参与生理相关变量的文献综述、指标构建与结构优化， " +
+                    "并为项目提供数据科学支持， " +
+                    "包括数据清洗与处理、统计分析、模型构建及跨板块数据协调。",
+    email: "luyichen@ucsb.edu",
+    phone: "+1 (820) 240-8056",
+    timezone: "回复时间: 9:00 AM - 4:00 PM (UTC-7) 太平洋时间 - 洛杉矶",
+  },
+  Teddy: {
+    name: "黄赟铭",
+    role: "传媒心理与数据科学跨学科研究 | 心理能力板块负责人",
+    background: "波士顿大学新闻与数据科学双学位本科生， " +
+                "关注媒体数据科学研究， " +
+                "重点探索媒体内容、数据分析与受众行为之间的关系。",
+    responsibility: "在RAD研究组负责心理学方向的研究设计与量表开发， " +
+                    "围绕心理健康、社会参与、生活质量等变量开展文献整理、 " +
+                    "指标构建与条目优化； " +
+                    "负责认知访谈的问题设计、线下访谈培训与执行协调， " +
+                    "并支持项目中的媒体传播、内容整理与传媒研究相关工作。",
+    email: "teddymarkhuang@gmail.com",
+    phone: "",
+    timezone: "回复时间: 9:00 AM - 4:00 PM (UTC-4) 北美东部时间 - 波士顿",
+  },
+  Eason: {
+    name: "张轶尘",
+    role: "前端总工程师",
+    background: "世界人工智能奥林匹克（IOAI）中国国家队正式队员， " +
+                "专注于机器学习、软件工程与人工智能应用开发。",
+    responsibility: "负责RAD研究组MVP（最小可行产品）的整体前端架构设计与开发， " +
+                    "承担核心功能实现、用户交互设计、系统优化及前后端协同开发工作， " +
+                    "为项目的数字化评估平台建设与产品迭代提供技术支持。",
+    email: "energymc@qq.com",
+    phone: "+86 18580102424",
+    timezone: "回复时间: 10:00 AM - 5:00 PM (UTC+8) 中国标准时间 - 香港",
+  },
+  Erin: {
+    name: "唐艺珈",
+    role: "中国大陆地区合作与跨机构协调负责人 | 前端软件开发协作",
+    background: "曾参加香港大学英才学院数据模型驱动与统计建模进修。",
+    responsibility: "主要负责中国大陆地区合作伙伴关系的建立与维护，推动跨机构沟通与项目协调，同时参与前端软件开发协作",
+    email: "erinaccepted@163.com",
+    phone: "+86 18875111630",
+    timezone: "回复时间: 9:00 AM - 5:00 PM (UTC+8) 中国标准时间 - 香港",
+  },
+  Carlos: {
+    name: "鲁子豪",
+    role: "科研支持助理",
+    background: "结合健康管理与商业实践背景。",
+    responsibility: "负责项目科研支持与运营协作， " +
+      "支持项目合作联络、研究成果整理及健康服务相关信息收集， " +
+      "为项目研究实施与日常运营提供支持。",
+    email: "luz071275@gmail.com",
+    phone: "",
+    timezone: "回复时间: 9:00 AM - 3:00 PM (UTC+8) 中国标准时间 - 香港",
+  },
+},
   },
   progress: {
     eyebrow: "项目进展",
