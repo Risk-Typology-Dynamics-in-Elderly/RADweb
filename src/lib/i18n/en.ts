@@ -95,29 +95,34 @@
     authorValue: "RAD Research Group",
     readTimeValue: "5 min",
     conclusion:"Our research follows a three-stage framework, progressing from multidimensional assessment to dynamic prediction and real-world deployment.",
-    title1: " Multidimensional Assessment Framework",
-    desc1: "Our research begins with the development of a standardized " +
-  "multidimensional assessment framework specifically designed for older adults. " +
-  "Drawing upon established clinical and functional assessment instruments, " +
-  "we develop and validate a comprehensive scale covering physical health, " +
-  "psychological wellbeing, functional ability, and environmental factors. " +
-  "Through large-scale cross-sectional data collection, " +
-  "the framework generates standardized risk profiles " +
-  "and reveals heterogeneous patterns among older adults.",
+    title1: " Multidimensional Assessment & Risk Typology",
+    desc1: "This stage establishes a standardized framework for assessing " +
+  "multidimensional risks among older adults across physiological, " +
+  "psychological, functional, and environmental domains. " +
+  "Building on established assessment instruments and validated measurement approaches, " +
+  "we aim to develop and evaluate a comprehensive assessment scale. " +
+  "Through cross-sectional data collection and data-driven analysis, " +
+  "we seek to characterize heterogeneous risk patterns and identify interpretable risk archetypes, " +
+  "providing a foundation for understanding individual risk profiles " +
+  "and supporting subsequent longitudinal research.",
     title2: "Dynamic Risk Stratification",
-    desc2:"Building upon multidimensional assessment, " +
-  "longitudinal data are incorporated to model how risks evolve over time. " +
-  "By combining machine learning with explainable AI, " +
-  "the framework continuously updates individual risk levels, " +
-  "supports early warning, " +
-  "and provides interpretable risk trajectories for healthcare professionals.",
+    desc2:"Building upon multidimensional assessment and risk typology, this stage " +
+  "introduces longitudinal data to examine how individual risk states " +
+  "evolve over time. By integrating new information from multiple " +
+  "assessment points and other relevant data sources, we aim to model " +
+  "transitions between risk states, identify emerging vulnerabilities, " +
+  "and dynamically update individual risk levels. The resulting framework " +
+  "will support risk tracking, predictive analysis, and interpretable " +
+  "risk trajectories across multiple time horizons.",
     title3: " Decision Support and Deployment",
-    desc3:"The validated framework is translated into a practical " +
-  "decision-support platform for healthcare and elder care organizations. " +
-  "Following a human-in-the-loop philosophy, " +
-  "AI assists professionals by providing interpretable insights " +
-  "while continuously improving through real-world feedback " +
-  "and iterative model refinement.",
+    desc3:"This stage focuses on translating validated research findings and risk " +
+  "models into practical, explainable decision-support tools. We envision " +
+  "developing an integrated platform that presents multidimensional risk " +
+  "profiles, longitudinal trajectories, and early-warning information to " +
+  "support healthcare and eldercare decision-making. Following a human-in-" +
+  "the-loop approach, the system will assist rather than replace professional " +
+  "judgment, with deployment, real-world evaluation, and iterative refinement " +
+  "guiding its continued development.",
 
   },
   dashboard: {
@@ -133,6 +138,7 @@
     title: "People behind the RAD Research Group",
     description:
       "Researchers and students working on risk and aging dynamics.",
+    click:"Click on a member card to view their full profile.",
     members:{
       Gloria:{
         name:"Shiqi(Gloria) Zhang",
@@ -189,7 +195,6 @@
                         "on-site interview training and coordination. " +
                         "Also supports media-related work, content management, and communication research for the project.",
         email: "teddymarkhuang@gmail.com",
-        phone: "",
         timezone: "9:00 AM - 4:00 PM (UTC-4) Eastern Time - Boston",
        },
       Eason: {
@@ -244,64 +249,57 @@
       planned: "Planned",
     },
     milestones: {
-      kickoff: {
-        title: "Phase 1 · Research Planning",
-        desc: "Established the overall research objectives, study design, " +
-      "and theoretical foundation through a comprehensive literature review. " +
-      "This phase defined the scope of the project " +
-      "and identified key research questions " +
-      "for community-based risk assessment in older adults."
+      stage1: {
+        stageTitle:"Stage I — Multidimensional Assessment & Risk Typology",
+        kickoff: {
+          title: "Phase 1 · Research Planning",
+          desc: "Establish research objectives, review literature, and develop" +
+              " the initial four-domain assessment framework."
+        },
+        literature: {
+          title: "Phase 2 ·  Ethics & Compliance",
+          desc: "Prepare research ethics, legal, institutional, and administrative" +
+              " arrangements."
+        },
+        formulation: {
+          title: "Phase 3 · Cognitive Interviews",
+          desc: "Refine questionnaire items through cognitive interviews and feedback from older adults..",
+        },
+        collection: {
+          title: "Phase 4 ·  Pilot Testing",
+          desc: "Evaluate study feasibility and refine the assessment scale and procedures.",
+        },
+        pilot: {
+          title: "Phase 5 · Validation & Risk Typology",
+          desc: "Collect cross-sectional data, validate the assessment instrument, " +
+              "and identify multidimensional risk patterns.",
+        },
       },
-      literature: {
-        title: "Phase 2 · Assessment Framework Development",
-        desc: "Developed a multidimensional assessment framework " +
-      "integrating physiological health, psychological wellbeing, " +
-      "functional ability, and environmental factors. " +
-      "The framework serves as the conceptual foundation " +
-      "for subsequent data collection and AI modeling."
+      stage2: {
+        stageTitle:"Stage II — Dynamic Risk Stratification",
+        validation: {
+          title: "Phase 6 ·  Longitudinal Research",
+          desc: "Establish long-term research partnerships and collect follow-up data" +
+              " to track changes over time."
+        },
+        modeling: {
+          title: "Phase 7 · Dynamic Risk Modeling",
+          desc: "Develop predictive models to track risk transitions and identify emerging vulnerabilities.",
+        },
       },
-      formulation: {
-        title: "Assessment Scale Development",
-        desc:"Designed the comprehensive assessment scale " +
-      "by integrating validated international instruments, " +
-      "refining measurement constructs, " +
-      "and adapting items for older adults.",
+      stage3: {
+        stageTitle:"Stage III — Decision Support and Deployment",
+        release: {
+          title: "Phase 8 · Platform Development",
+          desc: "Develop explainable decision-support tools for risk visualization, tracking,"+
+                " and professional review."
+        },
+        deployment: {
+          title: "Phase 9 ·  Deployment & Evaluation ",
+          desc: "Evaluate real-world applications and continuously refine the platform through"+
+                " feedback and validation."
+        }
       },
-      collection: {
-        title: "Phase 4 · Pilot Study Preparation",
-        desc:"Prepared the pilot study through survey design, " +
-      "sampling strategy, investigator training, " +
-      "and data collection protocols.",
-      },
-      pilot: {
-        title: "Phase 5 · Pilot Testing & Scale Refinement",
-        desc: "Conduct pilot testing and cognitive interviews " +
-            "to evaluate item clarity " +
-            "and optimize the assessment scale.",
-      },
-      validation: {
-        title: "Phase 6 · Data Collection & Validation",
-        desc: "Conduct large-scale community data collection " +
-      "and evaluate the reliability and validity " +
-      "of the assessment framework."
-      },
-      modeling: {
-        title: "Phase 7 · AI Modeling & Risk Typology",
-        desc: "Develop AI-driven models for multidimensional risk typology, " +
-        "dynamic risk prediction, and early warning."
-      },
-      release: {
-        title: "Phase 8 · Dashboard & Platform Development",
-        desc: "Develop an interactive dashboard and web platform " +
-        "to visualize assessment results " +
-        "and support community-based decision making."
-       },
-      deployment: {
-        title: "Phase 9 · Community Deployment & Evaluation",
-        desc: "Deploy the platform in community settings, " +
-      "evaluate implementation outcomes, " +
-      "and continuously refine the system through real-world feedback."
-  }
     },
   },
   contact: {

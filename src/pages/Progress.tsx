@@ -13,18 +13,22 @@ type Milestone = {
   statusId: StatusId
   titleKey: string,
   descKey: string
+  stageHeader?: boolean,
 }
 
 const milestones: Milestone[] = [
-  { date: "", statusId: "completed", titleKey: "progress.milestones.kickoff.title", descKey: "progress.milestones.kickoff.desc" },
-  { date: "", statusId: "completed", titleKey: "progress.milestones.literature.title", descKey: "progress.milestones.literature.desc" },
-  { date: "", statusId: "inProgress", titleKey: "progress.milestones.formulation.title", descKey: "progress.milestones.formulation.desc" },
-  { date: "", statusId: "inProgress", titleKey: "progress.milestones.collection.title", descKey: "progress.milestones.collection.desc" },
-  { date: "", statusId: "planned", titleKey: "progress.milestones.pilot.title", descKey: "progress.milestones.pilot.desc" },
-  { date: "", statusId: "planned", titleKey: "progress.milestones.validation.title", descKey: "progress.milestones.validation.desc" },
-  { date: "", statusId: "planned", titleKey: "progress.milestones.modeling.title", descKey: "progress.milestones.modeling.desc" },
-  { date: "", statusId: "planned", titleKey: "progress.milestones.release.title", descKey: "progress.milestones.release.desc" },
-  { date: "", statusId: "planned", titleKey: "progress.milestones.deployment.title", descKey: "progress.milestones.deployment.desc" },
+    { date: "", statusId: "completed", titleKey: "progress.milestones.stage1.stageTitle", descKey: "", stageHeader: true },
+    { date: "", statusId: "completed", titleKey: "progress.milestones.stage1.kickoff.title", descKey: "progress.milestones.stage1.kickoff.desc" },
+    { date: "", statusId: "inProgress", titleKey: "progress.milestones.stage1.literature.title", descKey: "progress.milestones.stage1.literature.desc" },
+    { date: "", statusId: "inProgress", titleKey: "progress.milestones.stage1.formulation.title", descKey: "progress.milestones.stage1.formulation.desc" },
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage1.collection.title", descKey: "progress.milestones.stage1.collection.desc" },
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage1.pilot.title", descKey: "progress.milestones.stage1.pilot.desc" },
+    { date: "", statusId: "completed", titleKey: "progress.milestones.stage2.stageTitle", descKey: "", stageHeader: true },
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage2.validation.title", descKey: "progress.milestones.stage2.validation.desc"},
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage2.modeling.title", descKey: "progress.milestones.stage2.modeling.desc" },
+    { date: "", statusId: "completed", titleKey: "progress.milestones.stage3.stageTitle", descKey: "", stageHeader: true },
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage3.release.title", descKey: "progress.milestones.stage3.release.desc" ,},
+    { date: "", statusId: "planned", titleKey: "progress.milestones.stage3.deployment.title", descKey: "progress.milestones.stage3.deployment.desc" },
 ]
 
 const statusVariant: Record<StatusId, BadgeVariant> = {
@@ -46,29 +50,41 @@ export function Progress() {
 
       <div className="mx-auto mt-14 max-w-3xl">
         <ol className="relative border-l border-border pl-8">
-          {milestones.map((m) => (
-            <li key={m.titleKey} className="mb-10 last:mb-0">
-              <span className="absolute -left-[9px] mt-1.5 h-4 w-4 rounded-full border-2 border-background bg-primary" />
-              <Card>
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
-                  <time className="text-sm font-medium text-muted-foreground">
-                    {m.date}
-                  </time>
-                  <Badge variant={statusVariant[m.statusId]}>
-                    {t(`progress.status.${m.statusId}`)}
-                  </Badge>
-                </CardHeader>
-                <CardContent>
-                  <h3 className="font-serif text-lg font-medium text-foreground">
-                    {t(m.titleKey)}
-                  </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {t(m.descKey)}
-                  </p>
-                </CardContent>
-              </Card>
-            </li>
-          ))}
+          {milestones.map((m) => {
+            if (m.stageHeader) {
+              return (
+                  <li key={m.titleKey} className="mb-6 mt-12 first:mt-0">
+                    <h2 className="font-serif text-xl font-medium text-foreground">
+                      {t(m.titleKey)}
+                    </h2>
+                  </li>
+              )
+            }
+            return (
+                <li key={m.titleKey} className="mb-10 last:mb-0">
+                  <span
+                      className="absolute -left-[9px] mt-1.5 h-4 w-4 rounded-full border-2 border-background bg-primary"/>
+                  <Card>
+                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
+                      <time className="text-sm font-medium text-muted-foreground">
+                        {m.date}
+                      </time>
+                      <Badge variant={statusVariant[m.statusId]}>
+                        {t(`progress.status.${m.statusId}`)}
+                      </Badge>
+                    </CardHeader>
+                    <CardContent>
+                      <h3 className="font-serif text-lg font-medium text-foreground">
+                        {t(m.titleKey)}
+                      </h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {t(m.descKey)}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </li>
+            )
+          })}
         </ol>
       </div>
     </div>
